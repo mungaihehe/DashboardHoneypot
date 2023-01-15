@@ -1,5 +1,5 @@
 import { LineChart, XAxis, YAxis, Tooltip, Legend, Line } from "recharts";
-import { AttackData } from "../AttackData";
+import { AttackData } from "../data/AttackData";
 import { Column } from "../Utils/Column";
 
 export const AttacksHistogram = () => {
