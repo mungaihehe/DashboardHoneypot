@@ -1,8 +1,8 @@
-import { AttacksDataCentersData } from "../data/AttacksDataCenters";
+import { InputCountData } from "../data/InputCountData";
 import { Column } from "../Utils/Column";
 import { Row } from "../Utils/Row";
 
-export const AttacksDataCenters = () => {
+export const InputCount = () => {
   return (
     <Column
       style={{
@@ -12,11 +12,11 @@ export const AttacksDataCenters = () => {
         margin: "4px",
       }}
     >
-      <p style={{ opacity: 0.5, paddingLeft: "12px" }}>Attacks Data Centers</p>
-      {AttacksDataCentersData.map((data) => (
+      <p style={{ opacity: 0.5, paddingLeft: "12px" }}>Input Data</p>
+      {InputCountData.map((data) => (
         <Row style={{ justifyContent: "space-between" }}>
-          <p>{data.center}</p>
-          <p>{data.number}</p>
+          <p>{data.command}</p>
+          <p>{data.count}</p>
         </Row>
       ))}
     </Column>
