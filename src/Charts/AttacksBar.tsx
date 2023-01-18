@@ -30,7 +30,7 @@ export const AttacksBar = () => {
         <XAxis dataKey={"type"} />
         <YAxis />
         <Tooltip />
-        <Bar dataKey={"number"} fill={"#8884d8"} />
+        <Bar dataKey={"number"} fill={"#f97316"} />
       </BarChart>
     </Column>
   );

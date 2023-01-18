@@ -12,16 +12,16 @@ export const AttacksHistogram = () => {
         margin: "4px",
       }}
     >
-      <p style={{ opacity: 0.5, paddingLeft: "12px" }}>Attacks Bar</p>
+      <p style={{ opacity: 0.5, paddingLeft: "12px" }}>Attacks Line Chart</p>
 
       <LineChart data={AttackData} width={500} height={250}>
         <XAxis dataKey={"date"} />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey={"attacks"} stroke={"#8884d8"} />
-        <Line type="monotone" dataKey={"uniqueSourceIPs"} stroke={"#82ca9d"} />
-        <Line type="monotone" dataKey={"uniqueHASSHs"} stroke={"#8884d8"} />
+        <Line type="monotone" dataKey={"attacks"} stroke={"#f97316"} />
+        <Line type="monotone" dataKey={"uniqueSourceIPs"} stroke={"#f97316"} />
+        <Line type="monotone" dataKey={"uniqueHASSHs"} stroke={"#f97316"} />
       </LineChart>
     </Column>
   );

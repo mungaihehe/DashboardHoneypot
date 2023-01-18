@@ -32,6 +32,7 @@ export const AttacksDetails = () => {
             style={{
               fontWeight: "800",
               fontSize: "24px",
+              color: "#f97316",
             }}
           >
             {d.number}

@@ -22,7 +22,7 @@ export const AttacksByCountry = () => {
           cx="50%"
           cy="50%"
           outerRadius={120}
-          fill="#8884d8"
+          fill="#f97316"
           label={(data) => {
             return data.country_name;
           }}

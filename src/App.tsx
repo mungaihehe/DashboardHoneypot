@@ -17,7 +17,25 @@ function App() {
         padding: "12px",
       }}
     >
-      <p style={{ fontWeight: "800", opacity: 0.5 }}>HoneyPot Dashboard</p>
+      <Row style={{ justifyContent: "space-between" }}>
+        <p style={{ fontWeight: "800", opacity: 0.5 }}>HoneyPot Dashboard</p>
+        <button
+          onClick={() => {
+            location.reload();
+          }}
+          style={{
+            border: "none",
+            padding: "12px",
+            paddingLeft: "16px",
+            paddingRight: "16px",
+            backgroundColor: "#f97316",
+            color: "#fafafa",
+            cursor: "pointer",
+          }}
+        >
+          Refresh
+        </button>
+      </Row>
       <Row
         style={{
           flexWrap: "wrap",
