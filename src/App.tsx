@@ -3,8 +3,10 @@ import { AttacksByCountry } from "./Charts/AttacksByCountry";
 import { AttacksDataCenters } from "./Charts/AttacksDataCenters";
 import { AttacksDetails } from "./Charts/AttacksDetails";
 import { AttacksHistogram } from "./Charts/AttacksHistorgram";
+import { CountriesMap } from "./Charts/CountriesMap";
 import { InputCount } from "./Charts/InputCount";
 import { SourceIPNumbers } from "./Charts/SourceIPNumbers";
+import { TagCloudUsername } from "./Charts/TagCloudUsername";
 import { Column } from "./Utils/Column";
 import { Row } from "./Utils/Row";
 
@@ -25,7 +27,12 @@ function App() {
         <AttacksBar />
         <AttacksDetails />
         <AttacksHistogram />
+
+        <CountriesMap />
+
         <AttacksByCountry />
+
+        <TagCloudUsername />
         <AttacksDataCenters />
         <InputCount />
         <SourceIPNumbers />
