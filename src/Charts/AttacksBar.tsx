@@ -1,7 +1,9 @@
+import { FC } from "react";
 import { BarChart, XAxis, YAxis, Tooltip, Bar } from "recharts";
+import { Card } from "../Utils/Card";
 import { Column } from "../Utils/Column";
 
-const data = [
+const AttackBarData = [
   {
     type: "Attacks",
     number: 229986,
@@ -15,16 +17,11 @@ const data = [
     number: 47,
   },
 ];
-export const AttacksBar = () => {
+export const AttacksBar: FC<{
+  data?: { type: string; number: number }[];
+}> = ({ data = AttackBarData }) => {
   return (
-    <Column
-      style={{
-        padding: "12px",
-        border: "1px solid rgba(255, 255, 255, 0.4)",
-        display: "inline-flex",
-        margin: "4px",
-      }}
-    >
+    <Card>
       <p style={{ opacity: 0.5, paddingLeft: "12px" }}>Attacks Bar</p>
       <BarChart width={500} height={250} data={data}>
         <XAxis dataKey={"type"} />
@@ -32,6 +29,6 @@ export const AttacksBar = () => {
         <Tooltip />
         <Bar dataKey={"number"} fill={"#f97316"} />
       </BarChart>
-    </Column>
+    </Card>
   );
 };

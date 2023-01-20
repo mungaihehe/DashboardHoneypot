@@ -1,17 +1,11 @@
 import { PieChart, Pie, Legend } from "recharts";
-import { AttacksByCountryData } from "../data/AttacksByCountry";
+import { AttacksByCountryData } from "../Data/AttacksByCountry";
+import { Card } from "../Utils/Card";
 import { Column } from "../Utils/Column";
 
 export const AttacksByCountry = () => {
   return (
-    <Column
-      style={{
-        padding: "12px",
-        border: "1px solid rgba(255, 255, 255, 0.4)",
-        display: "inline-flex",
-        margin: "4px",
-      }}
-    >
+    <Card>
       <p style={{ opacity: 0.5, paddingLeft: "12px" }}>Attacks By Country</p>
 
       <PieChart width={600} height={300}>
@@ -28,6 +22,6 @@ export const AttacksByCountry = () => {
           }}
         />
       </PieChart>
-    </Column>
+    </Card>
   );
 };

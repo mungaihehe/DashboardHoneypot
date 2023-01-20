@@ -1,3 +1,4 @@
+import { Card } from "../Utils/Card";
 import { Column } from "../Utils/Column";
 
 const data = [
@@ -17,14 +18,7 @@ const data = [
 
 export const AttacksDetails = () => {
   return (
-    <Column
-      style={{
-        padding: "12px",
-        border: "1px solid rgba(255, 255, 255, 0.4)",
-        display: "inline-flex",
-        margin: "4px",
-      }}
-    >
+    <Card>
       <p style={{ opacity: 0.5 }}>Cowrie Attacks</p>
       {data.map((d) => (
         <Column>
@@ -40,6 +34,6 @@ export const AttacksDetails = () => {
           <p>{d.type}</p>
         </Column>
       ))}
-    </Column>
+    </Card>
   );
 };
