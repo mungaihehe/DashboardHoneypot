@@ -1,6 +1,5 @@
 import { AttacksDataCentersData } from "../Data/AttacksDataCenters";
 import { Card } from "../Utils/Card";
-import { Column } from "../Utils/Column";
 import { Row } from "../Utils/Row";
 
 export const AttacksDataCenters = () => {

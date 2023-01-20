@@ -1,7 +1,8 @@
+import { FC } from "react";
 import { Card } from "../Utils/Card";
 import { Column } from "../Utils/Column";
 
-const data = [
+const AttackData = [
   {
     type: "Attacks",
     number: 229986,
@@ -16,7 +17,9 @@ const data = [
   },
 ];
 
-export const AttacksDetails = () => {
+export const AttacksDetails: FC<{
+  data?: { type: string; number: number }[];
+}> = ({ data = AttackData }) => {
   return (
     <Card>
       <p style={{ opacity: 0.5 }}>Cowrie Attacks</p>
